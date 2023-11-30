@@ -1,0 +1,100 @@
+/**
+ * desc: 全局样式
+ * User: Renjian.Tang/renjian.tang@gymboglobal.com
+ * Date: 2019/12/25
+ * Time: 上午11:28
+ */
+
+@import "./theme";
+
+* {
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font: 400 14px/1.5 "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+ol,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+img{
+  border: none;
+}
+
+ul>li {
+  list-style: none;
+}
+
+// 默认颜色
+.gym-button-default{
+  border: 1px solid $themeColor;
+  background: $themeColor;
+  color: $white;
+  cursor: pointer;
+}
+// 线框按钮
+.gym-button-white{
+  border: 1px solid $themeColor;
+  background: $white;
+  color: $themeColor;
+  cursor: pointer;
+}
+// 禁止按钮
+.gym-button-grey{
+  border: 1px solid #c9c9c9;
+  background: #c9c9c9;
+  color: $white;
+  cursor: pointer;
+}
+
+.gym-button-lg{
+  line-height: 30px;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0 25px;
+}
+
+.gym-button-xs{
+  line-height: 22px;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 0 15px;
+}
+// 高亮
+.high-light{
+  color: $themeColor;
+  cursor: pointer;
+}
+
+.mr10{
+  margin-right: 10px;
+}
+
+.mr15{
+  margin-right: 15px;
+}
+
+$--color-primary: #e06287;
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
